@@ -25,7 +25,7 @@ export function WhyTeamsChoosePlatform() {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-[#3C64DF] pb-5 pl-5 pr-5 rounded-lg w-full max-w-87.5 sm:max-w-none mx-auto"
+              className="bg-[#3C64DF] pb-10 pl-5 pr-5 rounded-lg w-full max-w-3/4 sm:max-w-none mx-auto"
             >
               <div className="w-12 h-12 rounded-xl bg-background-soft flex justify-center items-center mx-auto mb-3">
                 <Icon icon={item.icon} width={30} className="text-primary" />

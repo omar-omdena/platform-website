@@ -13,7 +13,7 @@ export function WhyTeamsChoosePlatform() {
   return (
     <section className="py-24 bg-[#FDE4D2] bg-[url(/images/resources/pattern-4.svg)] bg-no-repeat bg-top-right bg-auto">
       <div className="container mx-auto px-3">
-        <div className="p-18 rounded-2xl lg:flex lg:justify-between bg-background-soft">
+        <div className="p-8 sm:p-18 rounded-2xl lg:flex lg:justify-between bg-background-soft">
           <div className="lg:w-2/5">
             <h2 className="text-text-primary font-bold text-4xl mb-8">
               When Teams Turn to Umaku
@@ -26,15 +26,17 @@ export function WhyTeamsChoosePlatform() {
           </div>
           <ul className="flex flex-col  gap-4 lg:w-fit">
             {items.map((item) => (
-              <li className="flex items-center gap-3">
-                <div>
+              <li className="flex items-start gap-3">
+                <span>
                   <Icon
                     icon="mdi:check-circle"
                     width={20}
                     className="text-text-primary"
                   />
-                </div>
-                <span className="text-text-secondary font-medium">{item}</span>
+                </span>
+                <span className="text-text-secondary font-medium -mt-0.5">
+                  {item}
+                </span>
               </li>
             ))}
           </ul>

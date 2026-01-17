@@ -58,32 +58,32 @@ export default function Button({
     if (buttonType.includes("outline")) {
       switch (buttonSize) {
         case 1:
-          return "px-3.5 py-1.5";
+          return "px-1.5 sm:px-3.5 py-1.5";
         case 2:
-          return "px-5.5 py-2";
+          return "px-2.5 sm:px-5.5 py-2";
         case 3:
-          return "px-7.5 py-2.5";
+          return "px-3.5 sm:px-7.5 py-2.5";
         case 4:
-          return "px-9.5 py-3";
+          return "px-4.5 sm:px-9.5 py-3";
         case 5:
-          return "px-11.5 py-3.5";
+          return "px-5.5 sm:px-11.5 py-3.5";
         case 6:
-          return "px-13.5 py-4";
+          return "px-6.5 sm:px-13.5 py-4";
       }
     }
     switch (buttonSize) {
       case 1:
-        return "px-4 py-2";
+        return "px-2 sm:px-4 py-2";
       case 2:
-        return "px-6 py-2.5";
+        return "px-3 sm:px-6 py-2.5";
       case 3:
-        return "px-8 py-3";
+        return "px-4 sm:px-8 py-3";
       case 4:
-        return "px-10 py-3.5";
+        return "px-5 sm:px-10 py-3.5";
       case 5:
-        return "px-12 py-4";
+        return "px-6 sm:px-12 py-4";
       case 6:
-        return "px-14 py-4.5";
+        return "px-7 sm:px-14 py-4.5";
     }
   }
 

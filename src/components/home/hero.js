@@ -14,7 +14,7 @@ export function Hero() {
   // bg-[url(/images/homepage/hero-pattern.png)]
   return (
     <section className="bg-background-soft bg-[url(/images/homepage/pattern-1.svg)] bg-no-repeat bg-center">
-      <div className="px-3 container mx-auto flex gap-10 py-16">
+      <div className="px-3 container mx-auto flex gap-10 py-8 sm:py-16">
         <div className="lg:w-[42%]">
           <h1 className="mb-5 font-bold text-text-primary text-3xl sm:text-4xl md:text-5xl leading-10 sm:leading12 md:leading-14">
             <span className="block">One Platform</span>
@@ -27,13 +27,15 @@ export function Hero() {
             </p>
             <ul className="pl-4 font-normal">
               {items.map((item, index) => (
-                <li key={index} className="flex items-center gap-3 mb-2.5">
-                  <Icon
-                    icon="mdi:check-circle"
-                    width={20}
-                    className="text-success"
-                  />
-                  {item}
+                <li key={index} className="flex items-start gap-3 mb-2.5">
+                  <span>
+                    <Icon
+                      icon="mdi:check-circle"
+                      width={20}
+                      className="text-success"
+                    />
+                  </span>
+                  <span className="-mt-0.5">{item}</span>
                 </li>
               ))}
             </ul>
@@ -43,7 +45,7 @@ export function Hero() {
                 text="Read the Guide"
                 size={3}
                 to="/guide"
-                className="px-12"
+                className="px-3.5 sm:px-12"
               />
               <Button
                 type="secondary-outline"

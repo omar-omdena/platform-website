@@ -97,7 +97,7 @@ export function FAQs() {
   ];
   return (
     <section className="bg-background-soft bg-[url(/images/resources/pattern-3.svg)] bg-no-repeat bg-right">
-      <div className="container mx-auto px-3 py-36">
+      <div className="container mx-auto px-3 py-12">
         <h2 className="section-title text-center text-text-primary">
           Common Questions About Using Umaku
         </h2>
@@ -142,7 +142,7 @@ function FAQsRaw({
           }}
         >
           <div className={`flex justify-between gap-2`}>
-            <span className="text-(--faq-text) font-semibold text-lg">
+            <span className="text-(--faq-text) font-semibold text-base sm:text-lg">
               {faq.text}
             </span>
             <div>

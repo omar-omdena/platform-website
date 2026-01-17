@@ -24,7 +24,7 @@ export function Hero() {
   ];
   return (
     <section className="bg-background-soft bg-[url(/images/resources/pattern-1.svg)] bg-no-repeat bg-center">
-      <div className="px-3 container mx-auto flex flex-col items-center py-24">
+      <div className="px-3 container mx-auto flex flex-col items-center  py-12 sm:py-24">
         <h1 className="mb-8 text-text-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center md:leading-10 lg:leading-14 w-fit max-w-200">
           Resources for Operating AI Teams with Confidence
         </h1>

@@ -33,13 +33,17 @@ export function GuideBook() {
               </p>
               <ul className="flex flex-col gap-4 mb-8">
                 {items.map((item) => (
-                  <li className="flex items-center gap-2">
-                    <Icon
-                      icon="mdi:check-circle"
-                      width={18}
-                      className="text-primary"
-                    />
-                    <span className="text-text-primary text-base">{item}</span>
+                  <li className="flex items-start gap-2">
+                    <span>
+                      <Icon
+                        icon="mdi:check-circle"
+                        width={18}
+                        className="text-primary"
+                      />
+                    </span>
+                    <span className="text-text-primary text-base -mt-0.5">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>

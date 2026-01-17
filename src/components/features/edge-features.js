@@ -233,11 +233,13 @@ function FeatureRow({ feature, index }) {
         <ul className="flex flex-col gap-3 mb-10">
           {feature.items.map((item) => (
             <li key={item} className="flex gap-2 items-start">
-              <Icon
-                icon="mdi:check-circle"
-                width={19}
-                className="text-success"
-              />
+              <span>
+                <Icon
+                  icon="mdi:check-circle"
+                  width={19}
+                  className="text-success"
+                />
+              </span>
               <span className="text-base text-text-primary -mt-0.5">
                 {item}
               </span>

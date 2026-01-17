@@ -123,8 +123,10 @@ function Feature({ title, description, featureItems, image }) {
           <ul className="flex flex-col gap-5 text-base text-text-secondary font-medium">
             {featureItems.map((feat, index) => (
               <li key={index} className="flex gap-2">
-                <Icon icon={feat.icon} width={25} className="text-primary" />
-                <span>{feat.text}</span>
+                <span>
+                  <Icon icon={feat.icon} width={25} className="text-primary" />
+                </span>
+                <span className="-mt-0.5">{feat.text}</span>
               </li>
             ))}
           </ul>
